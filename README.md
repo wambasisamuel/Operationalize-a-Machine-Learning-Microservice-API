@@ -52,22 +52,23 @@ source .devops/bin/activate
 ### Instructions
 
 Clone this repository - git clone https://github.com/wambasisamuel/Operationalize-a-Machine-Learning-Microservice-API.git && cd Operationalize-a-Machine-Learning-Microservice-API
-make setup - create a Python virtual environment and source it
-make install - install the Python dependencies needed by the project
-./run_docker.sh - build the docker image and run the container for the prediction api
-./make_prediction.sh - test the prediction api
-./upload_docker.sh - upload the api image to dockerhub
-minikube start - start a local kubernetes cluster
-./run_kubernetes.sh - deploy the application on the Kubernetes cluster
-minikube delete - delete the local Kubernetes cluster
-circleci config validate - validate the CircleCI config file
+make setup - create a Python virtual environment and source it  
+make install - install the Python dependencies needed by the project  
+./run_docker.sh - build the docker image and run the container for the prediction api  
+./make_prediction.sh - test the prediction api  
+./upload_docker.sh - upload the api image to dockerhub  
+minikube start - start a local kubernetes cluster  
+./run_kubernetes.sh - deploy the application on the Kubernetes cluster  
+minikube delete - delete the local Kubernetes cluster  
+circleci config validate - validate the CircleCI config file  
 
 ### Key Project Files
-Dockerfile: Configuration file for creating a docker image for the application
-.circleci/config.yml: CircleCI configuration file for running the tests
-Makefile: Contains a set of commands to setup environment, run tests and run lints
-app.py: Python flask app that returns predictions about housing prices when requested using API calls
-run_docker.sh: Script to build and run docker image locally
-make_prediction.sh: Script for testing API request to the Flask app
-upload_docker.sh: Script to tag and upload docker image to docker hub
-run_kubernetes.sh: Script to setup and run app on kubernetes
+
+Dockerfile: Configuration file for creating a docker image for the application  
+.circleci/config.yml: CircleCI configuration file for running the tests  
+Makefile: Contains a set of commands to setup environment, run tests and run lints  
+app.py: Python flask app that returns predictions about housing prices when requested using API calls  
+run_docker.sh: Script to build and run docker image locally  
+make_prediction.sh: Script for testing API request to the Flask app  
+upload_docker.sh: Script to tag and upload docker image to docker hub  
+run_kubernetes.sh: Script to setup and run app on kubernetes  
