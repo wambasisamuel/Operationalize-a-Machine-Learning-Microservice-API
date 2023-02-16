@@ -1,0 +1,10 @@
+<paste log output from Kubernetes-mediated prediction, here>
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "housing-prediction" already exists
+NAME                 READY   STATUS             RESTARTS   AGE
+housing-predction    0/1     ImagePullBackOff   0          12m
+housing-prediction   1/1     Running            0          27s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
